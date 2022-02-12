@@ -1,0 +1,35 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+
+type Result @model {
+  name: String!
+}
+
+type Profile @model {
+  search_name: String
+  usage: String
+  belong_to: String
+  authored_by: String
+  affiliated_with: String
+  people: String
+  made_by: String
+}
+
+type Register @model {
+  result: String
+}
+type GraphInfo @model {
+  nodes: [Nodes]
+  links: [Links]
+}
+
+type Nodes @model {
+  id: String
+  label: String
+}
+
+type Links @model {
+  source: String
+  target: String
+  value: String
+}

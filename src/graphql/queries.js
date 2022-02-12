@@ -1,6 +1,29 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const getGraphData = /* GraphQL */ `
+  query GetGraphData($value: String!) {
+    getGraphData(value: $value) {
+      nodes {
+        id
+        label
+        createdAt
+        updatedAt
+      }
+      links {
+        source
+        target
+        value
+        id
+        createdAt
+        updatedAt
+      }
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
 export const getResult = /* GraphQL */ `
   query GetResult($id: ID!) {
     getResult(id: $id) {

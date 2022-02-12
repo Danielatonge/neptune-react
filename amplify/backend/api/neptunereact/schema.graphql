@@ -35,7 +35,7 @@ type Links @model @auth(rules: [{ allow: public, provider: apiKey }]) {
 }
 
 type Query {
-  getGraphInfo(value: String!): GraphInfo
+  getGraphData(value: String!): GraphInfo
     @function(name: "getGraphData-${env}")
     @auth(rules: [{ allow: public, provider: apiKey }])
 }
